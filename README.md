@@ -1,10 +1,10 @@
-# Dicoding Collection Dashboard ✨
+# Bike Sharing Dataset Interactive Dashboard ✨
 
 ## Setup environment
 ```
 conda create --name main-ds python=3.11.5
 conda activate main-ds
-pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
+pip install pandas matplotlib seaborn streamlit babel
 ```
 
 ## Run steamlit app
