@@ -2,6 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
+from babel.numbers import format_currency
+sns.set(style='dark')
 
 days_df = pd.read_csv('C:/Users/rayha/OneDrive/Dokumen/Submissions/days_df.csv')
 hours_df = pd.read_csv('C:/Users/rayha/OneDrive/Dokumen/Submissions/hours_df.csv')
