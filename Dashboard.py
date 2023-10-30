@@ -6,8 +6,8 @@ import numpy as np
 from babel.numbers import format_currency
 sns.set(style='dark')
 
-days_df = pd.read_csv('C:/Users/rayha/OneDrive/Dokumen/Submissions/days_df.csv')
-hours_df = pd.read_csv('C:/Users/rayha/OneDrive/Dokumen/Submissions/hours_df.csv')
+days_df = pd.read_csv('days_df')
+hours_df = pd.read_csv('hours_df')
 
 def create_monthly_df(df):
      monthly_df = df.resample(rule='M', on='dteday').agg({
