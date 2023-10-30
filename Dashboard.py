@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 import numpy as np
-from babel import format_currency
 sns.set(style='dark')
 
 days_df = pd.read_csv('https://github.com/RayhanLup1n/submissions/blob/main/days_df.csv')
