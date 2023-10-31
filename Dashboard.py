@@ -2,7 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-sns.set(style='dark')
+
+st.set_page_config(layout="wide")
 
 days_df = pd.read_csv('https://raw.githubusercontent.com/RayhanLup1n/submissions/main/days_df.csv')
 hours_df = pd.read_csv('https://raw.githubusercontent.com/RayhanLup1n/submissions/main/hours_df.csv')
@@ -98,7 +99,7 @@ fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(30, 10))
 
 colors = ["#12486B", "#419197", "#78D6C6", "#F5FCCD"]
 
-sns.barplot(x=days_df['new_season'], y=days_df['registered'], data=days_df['cnt'], palette=colors, ax=ax[0])
+sns.barplot(x=days_df['new_season'], y=days_df['registered'], palette=colors, ax=ax[0])
 ax[0].set_ylabel('Total Renters (Millions)', fontsize=18, fontweight='bold')
 ax[0].set_xlabel('Season', fontsize=18, fontweight='bold')
 ax[0].set_title("Total Rental by Registered Renters", loc='center', fontsize=15, fontweight='bold')
