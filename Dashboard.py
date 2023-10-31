@@ -171,7 +171,7 @@ table_hours_df = hours_df.groupby(by='hr').agg({
     "cnt": "sum",
 })
 
-table_hours_df = table_hours_df.sort_values(by='hr')
+table_hours_df = table_hours_df.sort_values(by='cnt')
 
 st.table(data=table_hours_df)
 with st.expander('See Explanation'):
