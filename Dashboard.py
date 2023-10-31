@@ -98,13 +98,13 @@ fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(30, 10))
 
 colors = ["#12486B", "#419197", "#78D6C6", "#F5FCCD"]
 
-sns.barplot(x=days_df['new_season'], y=days_df['cnt'], data=days_df['registered'], palette=colors, ax=ax[0])
+sns.barplot(x=days_df['new_season'], y=days_df['registered'], data=days_df['cnt'], palette=colors, ax=ax[0])
 ax[0].set_ylabel('Total Renters (Millions)', fontsize=18, fontweight='bold')
 ax[0].set_xlabel('Season', fontsize=18, fontweight='bold')
 ax[0].set_title("Total Rental by Registered Renters", loc='center', fontsize=15, fontweight='bold')
 ax[0].tick_params(axis='x', labelsize=15)
 
-sns.barplot(x=days_df['new_season'], y=days_df['cnt'], data=days_df['casual'], palette=colors, ax=ax[1])
+sns.barplot(x=days_df['new_season'], y=days_df['casual'], data=days_df['cnt'], palette=colors, ax=ax[1])
 ax[1].set_ylabel('Total Renters (Millions)', fontsize=18, fontweight='bold')
 ax[1].set_xlabel('Season', fontsize=18, fontweight='bold')
 ax[1].invert_xaxis()
