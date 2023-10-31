@@ -9,5 +9,5 @@ pip install pandas matplotlib seaborn streamlit babel
 
 ## Run steamlit app
 ```
-streamlit run c:/Users/rayha/OneDrive/Dokumen/Submissions/Dashboard.py
+streamlit run Dashboard.py
 ```
