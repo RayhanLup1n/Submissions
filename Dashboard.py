@@ -7,7 +7,7 @@ from babel.numbers import format_currency
 sns.set(style='dark')
 
 days_df = pd.read_csv('https://raw.githubusercontent.com/RayhanLup1n/submissions/main/days_df.csv')
-hours_df = pd.read_csv('https://raw.githubusercontent.com/RayhanLup1n/submissions/main/days_df.csv')
+hours_df = pd.read_csv('C:/Users/rayha/OneDrive/Dokumen/Submissions/hours_df.csv')
 
 def create_monthly_df(df):
      monthly_df = df.resample(rule='M', on='dteday').agg({
