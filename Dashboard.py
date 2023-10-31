@@ -2,8 +2,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-import numpy as np
-from babel.numbers import format_currency
 sns.set(style='dark')
 
 days_df = pd.read_csv('https://raw.githubusercontent.com/RayhanLup1n/submissions/main/days_df.csv')
@@ -165,11 +163,13 @@ with st.expander('See Explanation'):
     )
 
 st.subheader('Bicycle Rental Reports on Hourly basis')
+
 table_hours_df = hours_df.groupby(by='hr').agg({
-     'registered': 'sum',
-     'casual': 'sum',
-     'cnt': 'sum',
+    "registered": "sum",
+    "casual": "sum",
+    "cnt": "sum",
 })
+
 st.table(data=table_hours_df)
 with st.expander('See Explanation'):
     st.write(
