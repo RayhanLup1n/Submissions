@@ -163,26 +163,6 @@ with st.expander('See Explanation'):
         """
     )
 
-st.subheader('Bicycle Rental Reports on Hourly basis')
-
-table_hours_df = hours_df.groupby(by='hr').agg({
-    "registered": "sum",
-    "casual": "sum",
-    "cnt": "sum",
-})
-
-table_hours_df = table_hours_df.sort_values(by='cnt')
-
-st.table(data=table_hours_df)
-with st.expander('See Explanation'):
-    st.write(
-        """Tabel tersebut berisikan distribusi penyewaan yang terjadi tiap-tiap jamnya.
-        Dari tabel tersebut, kita dapat mengetahui bahwasanya jumlah penyewaan sepeda
-        ter-rendah terjadi pada pukul 00.00 hingga 06.00. Sedangkan untuk penyewaan 
-        tertinggi, terjadi pada pukul 17.00 dan 18.00 pada urutan ke dua.
-        """
-    )
-
 name = st.text_input(label='Nama Lengkap', value='')
 st.write('Nama: ', name)
 
