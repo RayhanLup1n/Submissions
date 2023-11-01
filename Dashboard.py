@@ -166,7 +166,6 @@ with st.expander('See Explanation'):
 name = st.text_input(label='Nama Lengkap', value='')
 st.write('Nama: ', name)
 
-
 text1 = st.text_area('Feedback')
 text2 = st.text_area('Tuliskan Pemahamanmu Mengenai Dashboard ini!')
 text3 = st.text_area('Pesan Untuk Saya Sebagai Pembuat Dashboard!')
