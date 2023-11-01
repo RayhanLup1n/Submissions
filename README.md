@@ -11,3 +11,7 @@ pip install pandas matplotlib seaborn streamlit babel
 ```
 streamlit run Dashboard.py
 ```
+## Tautan Untuk Dashboard
+```
+https://submissions-rayhan-ananda.streamlit.app/
+```
